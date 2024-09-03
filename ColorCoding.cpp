@@ -1,6 +1,6 @@
 #include "ColorCoding.h"
-using namespace TelCoColorCoder;
-
+namespace TelCoColorCoder
+{
 
  ColorPair::ColorPair(MajorColor major, MinorColor minor):
     majorColor(major), minorColor(minor)
@@ -29,3 +29,4 @@ using namespace TelCoColorCoder;
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
+}
