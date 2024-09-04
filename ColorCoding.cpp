@@ -39,4 +39,16 @@ namespace TelCoColorCoder
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
-}
+
+    std::string GetColorCoding(){
+        std::string ColorCodingPrint = "Color Coding :\n";
+        for(int i = 1; i <= 25; i++)
+         {
+            ColorPair colorPair = GetColorFromPairNumber(i);
+            ColorCodingPrint += std::to_string(i) + " " + colorPair.ToString() + "\n" ;
+            
+        }
+        return ColorCodingPrint;
+    }
+ }
+
