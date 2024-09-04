@@ -1,6 +1,5 @@
 
-#include <iostream>
-#include <assert.h>
+#include<string>
 
 namespace TelCoColorCoder
 {
@@ -26,9 +25,9 @@ namespace TelCoColorCoder
             ColorPair(MajorColor major, MinorColor minor);
             MajorColor getMajor();
             MinorColor getMinor();
-            std::string ToString();    
+            std::string ToString();
     };
-
+ 
     ColorPair GetColorFromPairNumber(int pairNumber);
     int GetPairNumberFromColor(MajorColor major, MinorColor minor);
 }
